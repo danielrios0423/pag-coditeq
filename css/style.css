@@ -1,0 +1,19 @@
+#header img{
+    width: 300px;
+}
+.navbar-select a{
+    color: #000000 !important;
+}
+.button-seach{
+    border-color: #000000;
+    color: #000000;
+    font-weight: bold;
+}
+
+#footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}

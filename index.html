@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>PlatziConf Hawaii</title>
+  </head>
+    <!-- Header -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to bottom, rgba(132,132,132,1) 0%, rgba(246,246,246,1) 140%, rgba(255,255,255,1) 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/Coditeq-Logo-alta.png" alt="Coditeq Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto navbar-select">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Parámetros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Insumos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Errores</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0 button-search" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- /Header -->
+    <!-- Main -->
+    <main>
+    <!-- Select -->
+      <div class="input-group mt-4 mb-4">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="input-group-prepend col-md-6 col-12">
+              <span class="input-group-text" id="">Cliente:</span>          
+              <select class="custom-select" id="inputGroupSelect03">
+                <option selected>Nombre del cliente</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="input-group-prepend col-md-6 col-12">
+              <span class="input-group-text" id="">Equipo:</span>
+            
+              <select class="custom-select" id="inputGroupSelect03">
+                <option selected>Serial S/N</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Select -->
+    <!-- Tabla de parametros -->
+      <div class="container-fluid">
+        <h1 class="">Parametros</h1>
+        <div class="table-responsive table-sm">
+          <table class="table table-sm text-center align-self-center">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Velocida de chorro</th>
+                <th scope="col">Presión de tinta (bars)</th>
+                <th scope="col">Velocidad del motor (rpm)</th>
+                <th scope="col">Temperatura de la tinta (°C)</th>
+                <th scope="col">Temperatura del cabezal (°C)</th>
+                <th scope="col">Referencia viscosidad (s)</th>
+                <th scope="col">Viscosidad (s)</th>
+                <th scope="col">Nivel de recuperación</th>
+                <th scope="col">Valor piezo</th>
+                <th scope="col"># Fases activas</th>
+                <th scope="col">Nivel de tinta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19.87</td>
+                <td>3.01</td>
+                <td>1493</td>
+                <td>33</td>
+                <td>39.5</td>
+                <td>31.9</td>
+                <td>32.2</td>
+                <td>421</td>
+                <td>214</td>
+                <td>6</td>
+                <td>52</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>20.00</td>
+                <td>2.88</td>
+                <td>1522</td>
+                <td>32.5</td>
+                <td>40.5</td>
+                <td>31.9</td>
+                <td>32.2</td>
+                <td>421</td>
+                <td>214</td>
+                <td>6</td>
+                <td>52</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>21.0</td>
+                <td>2.98</td>
+                <td>2022</td>
+                <td>31</td>
+                <td>41</td>
+                <td>31.9</td>
+                <td>32.2</td>
+                <td>421</td>
+                <td>214</td>
+                <td>6</td>
+                <td>52</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <!-- /Tabla de parametros -->
+    <!-- Tabla insumos -->
+    <div class="container-fluid">
+      <h1 class="">Estado de los insumos</h1>
+      <div class="row">
+        <div class="table-responsive table-sm col-md-6 mx-auto">
+          <table class="table table-sm text-center align-self-center">
+            <thead>
+              <tr>
+                <th scope="col">Ref. Tinta</th>
+                <th scope="col">Bach</th>
+                <th scope="col">Fecha de caducidad</th>
+                <th>Volumen (ml)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19.87</td>
+                <td>3.01</td>
+                <td>1493</td>
+              <tr>
+                <th scope="row">2</th>
+                <td>20.00</td>
+                <td>2.88</td>
+                <td>1522</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>21.0</td>
+                <td>2.98</td>
+                <td>2022</td>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-responsive table-sm col-md-6 mx-auto">
+          <table class="table table-sm text-center align-self-center">
+            <thead>
+              <tr>
+                <th scope="col">Ref. Aditivo</th>
+                <th scope="col">Bach</th>
+                <th scope="col">Fecha de caducidad</th>
+                <th>Volumen (ml)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>19.87</td>
+                <td>3.01</td>
+                <td>1493</td>
+              <tr>
+                <th scope="row">2</th>
+                <td>20.00</td>
+                <td>2.88</td>
+                <td>1522</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>21.0</td>
+                <td>2.98</td>
+                <td>2022</td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /Tabla insumos -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+      <footer id="footer" class="pb-3 pt-3">
+          <div class="container-fluid">
+              <div class="row text-center">
+                  <div class="col-12 col-lg">
+                      <a href="#">Preguntas Frecuentes</a>
+                  </div>
+                  <div class="col-12 col-lg">
+                    <a href="#">Contactanos</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#">Prensa</a>
+                </div>
+                <div class="col-12 col-lg">
+                  <a href="#">Conferencias</a>
+                </div>
+                <div class="col-12 col-lg">
+                  <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="col-12 col-lg">
+                  <a href="#">Privacidad</a>
+                </div>
+                <div class="col-12 col-lg">
+                  <a href="#">Estudiantes</a>
+                </div>
+              </div>
+          </div>
+      </footer>
+      <!-- /Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
