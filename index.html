@@ -49,9 +49,9 @@
     </nav>
     <!-- /Header -->
     <!-- Main -->
-    <main>
+    <main class="p-1">
     <!-- Select -->
-      <div class="input-group mt-4 mb-4">
+      <div class="input-group mx-auto mb-3 col-md-12">
         <div class="container-fluid">
           <div class="row text-center">
             <div class="input-group-prepend col-md-6 col-12">
@@ -78,140 +78,116 @@
       </div>
     <!-- /Select -->
     <!-- Tabla de parametros -->
-      <div class="container-fluid">
-        <h1 class="">Parametros</h1>
-        <div class="table-responsive table-sm">
-          <table class="table table-sm text-center align-self-center">
-            <thead>
-              <tr>
-                <th scope="col">Fecha</th>
-                <th scope="col">Velocida de chorro</th>
-                <th scope="col">Presión de tinta (bars)</th>
-                <th scope="col">Velocidad del motor (rpm)</th>
-                <th scope="col">Temperatura de la tinta (°C)</th>
-                <th scope="col">Temperatura del cabezal (°C)</th>
-                <th scope="col">Referencia viscosidad (s)</th>
-                <th scope="col">Viscosidad (s)</th>
-                <th scope="col">Nivel de recuperación</th>
-                <th scope="col">Valor piezo</th>
-                <th scope="col"># Fases activas</th>
-                <th scope="col">Nivel de tinta</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>19.87</td>
-                <td>3.01</td>
-                <td>1493</td>
-                <td>33</td>
-                <td>39.5</td>
-                <td>31.9</td>
-                <td>32.2</td>
-                <td>421</td>
-                <td>214</td>
-                <td>6</td>
-                <td>52</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>20.00</td>
-                <td>2.88</td>
-                <td>1522</td>
-                <td>32.5</td>
-                <td>40.5</td>
-                <td>31.9</td>
-                <td>32.2</td>
-                <td>421</td>
-                <td>214</td>
-                <td>6</td>
-                <td>52</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>21.0</td>
-                <td>2.98</td>
-                <td>2022</td>
-                <td>31</td>
-                <td>41</td>
-                <td>31.9</td>
-                <td>32.2</td>
-                <td>421</td>
-                <td>214</td>
-                <td>6</td>
-                <td>52</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    <!-- /Tabla de parametros -->
-    <!-- Tabla insumos -->
-    <div class="container-fluid">
-      <h1 class="">Estado de los insumos</h1>
-      <div class="row">
-        <div class="table-responsive table-sm col-md-6 mx-auto">
-          <table class="table table-sm text-center align-self-center">
-            <thead>
-              <tr>
-                <th scope="col">Ref. Tinta</th>
-                <th scope="col">Bach</th>
-                <th scope="col">Fecha de caducidad</th>
-                <th>Volumen (ml)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>19.87</td>
-                <td>3.01</td>
-                <td>1493</td>
-              <tr>
-                <th scope="row">2</th>
-                <td>20.00</td>
-                <td>2.88</td>
-                <td>1522</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>21.0</td>
-                <td>2.98</td>
-                <td>2022</td>
-            </tbody>
-          </table>
-        </div>
-        <div class="table-responsive table-sm col-md-6 mx-auto">
-          <table class="table table-sm text-center align-self-center">
-            <thead>
-              <tr>
-                <th scope="col">Ref. Aditivo</th>
-                <th scope="col">Bach</th>
-                <th scope="col">Fecha de caducidad</th>
-                <th>Volumen (ml)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>19.87</td>
-                <td>3.01</td>
-                <td>1493</td>
-              <tr>
-                <th scope="row">2</th>
-                <td>20.00</td>
-                <td>2.88</td>
-                <td>1522</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>21.0</td>
-                <td>2.98</td>
-                <td>2022</td>
-            </tbody>
-          </table>
-        </div>
+    <div class="container-tabla container-fluid col-11 col-md-11">
+      <div class="row text-center">
+          <div class="col-12 col-lg">
+              <h2 class="mb-6 col-sm-1">Parametros</h2>
+              <div class="table-responsive table-sm-6">
+                <table class="table table-sm text-center align-self-center">
+                    <thead>
+                    <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Velocida de chorro</th>
+                        <th scope="col">Presión de tinta (bars)</th>
+                        <th scope="col">Velocidad del motor (rpm)</th>
+                        <th scope="col">Temperatura de la tinta (°C)</th>
+                        <th scope="col">Temperatura del cabezal (°C)</th>
+                        <th scope="col">Referencia viscosidad (s)</th>
+                        <th scope="col">Viscosidad (s)</th>
+                        <th scope="col">Nivel de recuperación</th>
+                        <th scope="col">Valor piezo</th>
+                        <th scope="col"># Fases activas</th>
+                        <th scope="col">Nivel de tinta</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>19.87</td>
+                        <td>3.01</td>
+                        <td>1493</td>
+                        <td>33</td>
+                        <td>39.5</td>
+                        <td>31.9</td>
+                        <td>32.2</td>
+                        <td>421</td>
+                        <td>214</td>
+                        <td>6</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>20.00</td>
+                        <td>2.88</td>
+                        <td>1522</td>
+                        <td>32.5</td>
+                        <td>40.5</td>
+                        <td>31.9</td>
+                        <td>32.2</td>
+                        <td>421</td>
+                        <td>214</td>
+                        <td>6</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>21.0</td>
+                        <td>2.98</td>
+                        <td>2022</td>
+                        <td>31</td>
+                        <td>41</td>
+                        <td>31.9</td>
+                        <td>32.2</td>
+                        <td>421</td>
+                        <td>214</td>
+                        <td>6</td>
+                        <td>52</td>
+                    </tr>
+                    </tbody>
+                </table>
+              </div>
+          </div>
       </div>
     </div>
+    <!-- /Tabla de parametros -->
+    <!-- Tabla insumos -->
+    <div class="container-tabla container-fluid col-11 col-md-11 mt-3 mb-2">
+      <div class="row text-center">
+          <div class="col-12 col-lg">
+              <h2 class="mb-6 col-sm-1">Insumos</h2>
+              <div class="table-responsive table-sm-6">
+                <table class="table table-sm text-center align-self-center">
+                  <thead>
+                    <tr>
+                      <th scope="col">Ref. Aditivo</th>
+                      <th scope="col">Bach</th>
+                      <th scope="col">Fecha de caducidad</th>
+                      <th>Volumen (ml)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>19.87</td>
+                      <td>3.01</td>
+                      <td>1493</td>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>20.00</td>
+                      <td>2.88</td>
+                      <td>1522</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>21.0</td>
+                      <td>2.98</td>
+                      <td>2022</td>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
     <!-- /Tabla insumos -->
     </main>
     <!-- /Main -->
